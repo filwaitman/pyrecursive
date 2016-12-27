@@ -37,15 +37,15 @@ Usage:
     pyrecursive({'hamster': [1, 2, 3, {'test': 42}]}, double)
     # result: {'hamster': [2, 4, 6, {'test': 84}]}
 
-    # In order to transform dict keys in depth by setting transform_dict_keys variable to True (default: False).
+    # In order to transform dict keys in depth: set transform_dict_keys variable to True (default: False).
     pyrecursive({'hamster': [1, 2, 3, {'test': 42}]}, double, transform_dict_keys=True)
     # result: {'hamsterhamster': [2, 4, 6, {'testtest': 84}]}
 
-    # In order not to transform dict value in depth by setting transform_dict_values variable to False (default: True).
+    # In order not to transform dict values in depth: set transform_dict_values variable to False (default: True).
     pyrecursive({'hamster': [1, 2, 3, {'test': 42}]}, double, transform_dict_values=False)
     # result: {'hamster': [2, 4, 6, {'test': 42}]}
 
-    # In order to define custom rules for each object type in depth by setting custom_rules variable.
+    # In order to define custom rules for each object type in depth: set custom_rules variable.
     pyrecursive([1, 2, 3, 'banana'], double, custom_rules={int: lambda x: x * 5})
     # result: [5, 10, 15, 'bananabanana'] (multiplied by 5 when int, multiplied by 2 otherwise)
 
