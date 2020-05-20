@@ -57,6 +57,6 @@ Did you think in some interesting feature, or have you found a bug? Please let m
 
 Of course you can also download the project and send me some `pull requests <https://github.com/filwaitman/pyrecursive/pulls>`_. Please keep in mind that (1) we do follow pep8, (2) our line-length is 120 chars and (3) your changes must be compatible with Python 2.7 and Python 3.6+.
 
-You can  send your suggestions by `opening issues <https://github.com/filwaitman/pyrecursive/issues>`_.
+You can send your suggestions by `opening issues <https://github.com/filwaitman/pyrecursive/issues>`_.
 
 You can contact me directly as well. Take a look at my contact information at `http://filwaitman.github.io/ <http://filwaitman.github.io/>`_ (email is preferred rather than mobile phone).
