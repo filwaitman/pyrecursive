@@ -1,4 +1,12 @@
-import six
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+import sys
+
+if sys.version_info[0] == 3:
+    _string_types = str,  # noqa
+else:
+    _string_types = basestring,  # noqa
 
 
 def pyrecursive(obj, f, transform_dict_keys=False, transform_dict_values=True, custom_rules=None):
@@ -24,7 +32,7 @@ def pyrecursive(obj, f, transform_dict_keys=False, transform_dict_values=True, c
             result[key] = value
         return result
 
-    elif hasattr(obj, '__iter__') and not isinstance(obj, six.string_types):
+    elif hasattr(obj, '__iter__') and not isinstance(obj, _string_types):
         result = []
         for inner_obj in obj:
             result.append(pyrecursive(inner_obj, **kwargs))

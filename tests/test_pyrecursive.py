@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from decimal import Decimal
+
 import unittest
+from decimal import Decimal
 
-import six
-
-from pyrecursive import pyrecursive
+from pyrecursive import _string_types, pyrecursive
 
 
 class PyRecursiveSingleAttributeTestCase(unittest.TestCase):
@@ -39,7 +38,7 @@ class PyRecursiveSingleAttributeTestCase(unittest.TestCase):
         self.assertEquals(pyrecursive({'value': 1}, lambda x: x * 2, transform_dict_values=False), {'value': 1})
 
     def test_custom_rules(self):
-        string_type = six.string_types[0]
+        string_type = _string_types[0]
         custom_rules = {string_type: lambda x: x}
         self.assertEquals(pyrecursive([1, 'banana'], lambda x: x * 2, custom_rules=custom_rules), [2, 'banana'])
 
