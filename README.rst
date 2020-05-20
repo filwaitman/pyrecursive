@@ -1,5 +1,8 @@
-.. image:: https://travis-ci.org/filwaitman/pyrecursive.svg?branch=master
-    :target: https://travis-ci.org/filwaitman/pyrecursive
+.. image:: https://travis-ci.com/filwaitman/pyrecursive.svg?branch=master
+    :target: https://travis-ci.com/filwaitman/pyrecursive
+
+.. image:: https://codecov.io/gh/filwaitman/pyrecursive/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/filwaitman/pyrecursive
 
 
 pyrecursive
