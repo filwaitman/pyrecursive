@@ -10,8 +10,6 @@ pyrecursive
 
 Have you ever needed to transform a :code:`whatever python object` in depth? So this one is for you. =]
 
-This library runs on both Python 2 and Python 3 (tested on 2.7 and 3.5, precisely).
-
 
 Installation:
 -------------
