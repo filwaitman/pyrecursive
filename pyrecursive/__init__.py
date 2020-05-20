@@ -4,9 +4,9 @@ from __future__ import unicode_literals
 import sys
 
 if sys.version_info[0] == 3:
-    _string_types = str,
+    _string_types = str,  # noqa
 else:
-    _string_types = basestring,
+    _string_types = basestring,  # noqa
 
 
 def pyrecursive(obj, f, transform_dict_keys=False, transform_dict_values=True, custom_rules=None):
