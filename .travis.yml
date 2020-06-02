@@ -6,7 +6,7 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
-install: pip install tox-travis codecov
+install: pip install tox-travis codecov==2.1.1
 script:
   - tox -e lint
   - tox
